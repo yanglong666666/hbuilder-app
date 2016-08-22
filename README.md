@@ -1,13 +1,17 @@
 # hello-world
 
 ##开发流程
-clone
+首先把项目 clone 下面来，然后
 
 ##安装依赖
+```
 npm install
+```
 
 ##执行
+```
 gulp
+````
 
 ### 页面
 首先在 `views` 下面新建 `jade` 文件，根据需要继承 `layout` 下面的模版（也可以自己添加）。
