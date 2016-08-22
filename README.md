@@ -14,8 +14,8 @@ gulp
 ````
 
 ### 页面
-首先在 `views` 下面新建 `jade` 文件，根据需要继承 `layout` 下面的模版（也可以自己添加）。
-Views/includes 下面的组件都是通用的，可以 `include` 进来使用。
+-首先在 `views` 下面新建 `jade` 文件，根据需要继承 `layout` 下面的模版（也可以自己添加）。
++Views/includes 下面的组件都是通用的，可以 `include` 进来使用。
 `datas/` 下面定义的都是 `includes` 里面 `mixin` 引用的数据。
 `layout` 下面定义页面的模版，可以提前将需要的 `data` 和 `mixin` 引入进来。
 ### 样式
