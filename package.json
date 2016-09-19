@@ -1,0 +1,23 @@
+{
+  "name": "business-centrialized-front",
+  "version": "0.0.1",
+  "description": "业务集中运营平台",
+  "main": "server.js",
+  "build": "browserify ./public/js/main.js -o ./public/js/bundle.js",
+  "watch": "watchify ./public/js/main.js -o ./public/js/bundle.js --debug --verbose",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "nodemon": "^1.9.1",
+    "glob": "^7.0.3",
+    "browser-sync": "^2.12.8"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0"
+  },
+  "author": "xxxxx",
+  "license": "ISC"
+}
