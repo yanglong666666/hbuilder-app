@@ -1,14 +1,45 @@
 # hello-world
 
-##开发流程
-首先把项目 clone 下面来，然后
+## 构建技术
+express + jade + stylus + nodemon
+## 项目目录
+```
+.
+├── dist
+│   ├── css
+│   ├── images
+│   │   ├── index
+│   │   └── logo
+│   ├── js
+│   │   └── libs
+│   └── temp
+│       └── json
+├── docs
+├── jade
+│   ├── _includes
+│   │   ├── _components
+│   │   └── data
+│   └── _layout
+├── public
+│   ├── images
+│   │   ├── index
+│   │   └── logo
+│   ├── js
+│   │   └── libs
+│   └── temp
+│       └── json
+└── stylus
+    ├── _components
+    ├── _config
+    └── css
 
+```
 ##安装依赖
 ```
 npm install
 ```
 
-##执行
+##出包
 ```
 gulp
 ````
