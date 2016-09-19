@@ -39,9 +39,9 @@ express + jade + stylus + nodemon
 npm install
 ```
 
-##出包
+##构建本地服务器
 ```
-gulp
+npm start
 ````
 
 ### 页面
