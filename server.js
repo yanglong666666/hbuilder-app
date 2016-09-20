@@ -5,12 +5,19 @@
 var express = require('express');
 var path = require('path');
 var glob = require('glob');
+var stylus = require('stylus');
 var bs = require('browser-sync').create();
 var app = express();
 
 
 app.set('views', path.join(__dirname, 'jade/'));
 app.set('view engine', 'jade');
+
+app.use(stylus.middleware({
+    src:__dirname + '/stylus',
+    dest:__dirname + '/public',
+    sourcemap:true
+}));
 app.use(express.static('public'));
 
 
@@ -38,12 +45,12 @@ glob.sync('jade/**/*', {
 });
 
 //监听
-app.listen(8080,function(){
+app.listen(3001,function(){
     bs.init({
         open: true,
         ui: false,
         notify: false,
-        proxy: 'localhost:8080',
+        proxy: 'localhost:3001',
         files: ['./jade/**/*','./stylus/**/*','./public/js/**/*'],
         port: 8080
     });

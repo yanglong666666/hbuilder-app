@@ -1,1 +1,9 @@
-.home_title 我的资料管理
+extends _layout/wrapper
+block js
+	script.
+		$('.page-index').append('123');
+
+block middle
+	+main_cont('page-index')
+		block content
+			.home_title 我的资料管理
